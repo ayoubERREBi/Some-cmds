@@ -1,0 +1,324 @@
+    1  ping -c 4 google.com
+    2  ls
+    3  tree
+    4  sudo apt install tree
+    5  tree
+    6  install node.js
+    7  install --help
+    8  [200~curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+    9  ~curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+   10  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+   11  \. "$HOME/.nvm/nvm.sh"
+   12  nvm install 24
+   13  node -v
+   14  npm -v
+   15  ls
+   16  cd Téléchargements/
+   17  ls
+   18  sudo apt install ./code_1.109.2-1770755809_amd64.deb 
+   19  sudo wg
+   20  sudo wg-quick up wg0
+   21  sudo wg
+   22  ip a
+   23  ip route
+   24  ip a show enp0s3
+   25  hostname -I
+   26  ip a
+   27  sudo apt update
+   28  ip a
+   29  sudo ss -ulnp | grep 51820
+   30  ip a
+   31  ping 172.20.10.2
+   32  sudo wg
+   33  sudo /etc/wireguard/wg0.conf
+   34  ls /etc/wireguard/
+   35  sudo ls /etc/wireguard/
+   36  sudo nano /etc/wireguard/wg0.conf
+   37  sudo wg-quick down wg0
+   38  sudo wg-quick up wg0
+   39  sudo wg
+   40  sudo iptables -L
+   41  sudo iptables -L -t nat
+   42  ls
+   43  mkdir VPN_keys
+   44  cd VPN_keys/
+   45  mkdir server client1 client 2
+   46  ls
+   47  ls -a
+   48  ls -al
+   49  ls client1
+   50  mkdir client2
+   51  mv client client0
+   52  ls
+   53  cd server/
+   54  wg genkey | tee sv_prv | wg pubkey > sv_pubkey
+   55  ls
+   56  cd ..
+   57  cd client0
+   58  wg genkey | tee cl0_prv | wg pubkey > cl0_pubkey
+   59  ls
+   60  cd ..
+   61  cd client1
+   62  wg genkey | tee cl1_prv | wg pubkey > cl1_pubkey
+   63  cd ..
+   64  cd client2
+   65  wg genkey | tee cl2_prv | wg pubkey > cl2_pubkey
+   66  ls
+   67  cd ..
+   68  tree
+   69  rm 2
+   70  rm -r 2
+   71  ls
+   72  tree
+   73  sudo nano /etc/wireguard/wg0.conf
+   74  cat server/sv_prv 
+   75  sudo nano /etc/wireguard/wg0.conf
+   76  cat client0/cl0_pubkey 
+   77  sudo nano /etc/wireguard/wg0.conf
+   78  cat client1/cl1_pubkey 
+   79  sudo nano /etc/wireguard/wg0.conf
+   80  cat client2/cl2_pubkey 
+   81  sudo nano /etc/wireguard/wg0.conf
+   82  sudo ls /etc/wireguard/
+   83  sudo cat /etc/wireguard/wg0-client.conf
+   84  nano client0/wg_client0.conf
+   85  cat server/sv_prv 
+   86  cat server/sv_pubkey 
+   87  nano client0/wg_client0.conf
+   88  cat client0/cl0_prv 
+   89  nano client0/wg_client0.conf
+   90  cd ..
+   91  sudo wg-quick up wg0
+   92  sudo wg-quick down wg0
+   93  sudo wg-quick up wg0
+   94  sudo wg
+   95  tree
+   96  sudo wg-quick up wg_client0
+   97  mv VPN_keys/client0/wg_client0.conf  /etc/wireguard/
+   98  sudo mv VPN_keys/client0/wg_client0.conf  /etc/wireguard/
+   99  sudo wg-quick up wg_client0
+  100  sudo wg
+  101  ping 10.0.0.1
+  102  ping 10.0.0.2
+  103  sudo nano /etc/wireguard/
+  104  sudo ls /etc/wireguard/
+  105  sudo rm /etc/wireguard/wg0-client.conf
+  106  sudo ls /etc/wireguard/
+  107  sudo cat /etc/wireguard/wg_client0.conf
+  108  sudo cat /etc/wireguard/wg0
+  109  sudo cat /etc/wireguard/wg0.conf
+  110  sudo nano /etc/wireguard/wg_client0.conf
+  111  ping 10.0.0.3
+  112  sudo nano /etc/wireguard/wg_client0.conf
+  113  sudo wg-quick down wg_client0
+  114  sudo wg-quick up wg_client0
+  115  sudo wg
+  116  ping 10.0.0.3
+  117  ping 10.0.0.2
+  118  sudo wg-quick up wg_client0
+  119  sudo nano /etc/wireguard/wg_client0.conf
+  120  sudo nano /etc/wireguard/wg_client1.conf
+  121  cat VPN_keys/client1/cl1_prv 
+  122  sudo nano /etc/wireguard/wg_client1.conf
+  123  sudo wg-quick up wg_client1
+  124  sudo wg
+  125  ping 10.0.0.1
+  126  ping 10.0.0.2
+  127  ping 10.0.0.3
+  128  python3 --version
+  129  nano VPN.py
+  130  nano VPN_client_app.py
+  131  sudo nano /etc/wireguard/wg_client1.conf
+  132  nano VPN_client_app.py
+  133  python VPN_client_app.py
+  134  python3 VPN_client_app.py
+  135  pip install tkinter
+  136  sudo apt install pip
+  137  pip install tkinter
+  138  sudo apt install tkinter
+  139  sudo install tkinter
+  140  sudo apt install python3-tk
+  141  python3 VPN_client_app.py
+  142  python3 -m pip install customtkinter
+  143  apt install python3-customtkinter
+  144  sudo apt update
+  145  python3 -m pip install customtkinter
+  146  apt install python3-customtkinter
+  147  sudo apt install python3-customtkinter
+  148  sudo python3 -m pip install customtkinter
+  149  python3 -m pip install numpy
+  150  python3 -m pip install --user numpy
+  151  mkdir VPN_interface
+  152  cd VPN_interface/
+  153  python3 -m venv env
+  154  apt install python3.12-venv
+  155  sudo apt install python3.12-venv
+  156  python3 -m venv env
+  157  source env/bin/activate
+  158  ls
+  159  cd ..
+  160  tree
+  161  ls
+  162  clear
+  163  ls
+  164  mv VPN_client_app.py /VPN_interfaces
+  165  sudo mv VPN_client_app.py /VPN_interfaces
+  166  ls
+  167  ls VPN_interface/
+  168  tree
+  169  ls VPN_interface/
+  170  cd VPN_interface/
+  171  ls
+  172  nano client.py
+  173  sudo cat /etc/wireguard/wg_client1.conf
+  174  nano client.py
+  175  python3 client.py
+  176  pip install customtkinter
+  177  python3 client.py
+  178  pip install requests
+  179  python3 client.py
+  180  nano client.py
+  181  python3 client.py
+  182  nano client.py
+  183  nano server.py
+  184  sudo cat /etc/wireguard/wg_client1.conf
+  185  nano server.py
+  186  python3 server.py
+  187  pip install flask
+  188  python3 server.py
+  189  sudo wg
+  190  sudo wg-quick down wg_client0
+  191  sudo wg-quick down wg0
+  192  sudo wg-quick down client1
+  193  sudo wg-quick down client0
+  194  sudo ls /etc//wireguard/
+  195  sudo wg-quick down wg_client1
+  196  python3 server.py
+  197  nano server.py
+  198  python3 server.py
+  199  sudo wg-quick down wg0
+  200  sudo ls /etc/wireguard/
+  201  sudo wg-quick up wg0
+  202  python3 server.py
+  203  sudo python3 server.py
+  204  sudo env/bin/python3 server.py
+  205  cat server.py
+  206  sudo env/bin/python3 server.py
+  207  sudo systemctl enable nvidia-suspend.service
+  208  sudo systemctl enable nvidia-hibernate.service
+  209  sudo systemctl enable nvidia-resume.service
+  210  ip a
+  211  ls
+  212  mkdir vpn_app
+  213  cd vpn_app/
+  214  nano vpn_app.py
+  215  sudo python3 vpn_app.py 
+  216  nano vpn_app.py
+  217  hostname -I 
+  218  nano vpn_app.py
+  219  sudo python3 vpn_app.py 
+  220  sudo wg
+  221  sudo wg show
+  222  ping 172.20.10.2
+  223  sudo wg show
+  224  sudo ufw allow in on wg0
+  225  sudo apt install ufw
+  226  sudo ufw allow in on wg0
+  227  sudo python3 vpn_app.py 
+  228  sudo wg show
+  229  nano vpn_app.py
+  230  ip a
+  231  sudo wg show
+  232  ping 10.0.0.2
+  233  ping 10.0.0.1
+  234  sudo ufw disable
+  235  sudo sysctl -w net.ipv4.ip_forward=1
+  236  sudo wg show
+  237  ls
+  238  nano cat /etc/wireguard/wg0
+  239  sudo cat /etc/wireguard/wg0
+  240  sudo ls /etc/wireguard/
+  241  sudo ls /etc/wireguard/wg0.conf
+  242  sudo cat /etc/wireguard/wg0.conf
+  243  sudo cat /etc/wireguard/wg_client0.conf
+  244  nano vpn_app.py
+  245  ip a
+  246  sudo wg
+  247  sudo wg show
+  248  sudo cat /etc/wireguard/wg0.conf
+  249  sudo ls /etc/wireguard/
+  250  nano vpn_app.py
+  251  sudo rm /etc/wireguard/wg0.conf
+  252  sudo ls /etc/wireguard/
+  253  sudo wg-quick down wg0
+  254  sudo python3 vpn_app.py
+  255  sudo wg
+  256  ping 10.0.0.1
+  257  ping 10.0.0.2
+  258  sudo python3 vpn_app.py
+  259  sudo cat /etc/wireguard/wg0.conf
+  260  ip route 
+  261  ip route | grep default
+  262  sudo nano /etc/wireguard/wg0.conf
+  263  sudo wg-quick down wg0
+  264  sudo wg-quick up wg0
+  265  sudo wg
+  266  sudo wg show
+  267  sudo nano /etc/wireguard/wg0.conf
+  268  sudo wg-quick down wg0
+  269  sudo wg-quick up wg0
+  270  sudo wg show
+  271  ping 10.0.0.2
+  272  ping 10.0.0.1
+  273  sudo ufw enable
+  274  sudo nano /etc/wireguard/wg0.conf
+  275  sudo wg-quick down wg0
+  276  sudo wg-quick up wg0
+  277  sudo wg
+  278  sudo wg-quick up wg0
+  279  sudo wg-quick down wg0
+  280  sudo nano /etc/wireguard/wg0.conf
+  281  sudo wg-quick up wg0
+  282  sudo wg
+  283  sudo nano /etc/wireguard/wg0.conf
+  284  sudo wg-quick down wg0
+  285  sudo wg-quick up wg0
+  286  sudo wg
+  287  sudo nano /etc/wireguard/wg0.conf
+  288  sudo tcpdump -n -i any udp port 51821
+  289  sudo nano /etc/wireguard/wg0.conf
+  290  sudo iptables -P INPUT ACCEPT 
+  291  sudo iptables -P FORWARD ACCEPT 
+  292  udo iptables -P OUTPUT ACCEPT 
+  293  sudo iptables -P OUTPUT ACCEPT 
+  294  sudo iptables -t nat -F
+  295  sudo iptables -t mangle -F
+  296  sudo iptables -F 
+  297  sudo iptables -X
+  298  sudo wg-quick down wg0
+  299  sudo iptables -P INPUT ACCEPT 
+  300  sudo iptables -P FORWARD ACCEPT 
+  301  sudo iptables -P OUTPUT ACCEPT
+  302  sudo iptables -t nat -F
+  303  sudo iptables -t mangle -F
+  304  sudo iptables -F 
+  305  sudo iptables -X
+  306  sudo wg-quick up wg0
+  307  sudo wg
+  308  ifconfig.me
+  309  curl ifconfig.me
+  310  curl -4 ifconfig.me
+  311  sudo wg
+  312  sudo iptables -I FORWARD -d chatgpt.com -j REJECT
+  313  sudo iptables -I FORWARD -d wikipedia.org -j REJECT
+  314  curl -4 ifconfig.me
+  315  sudo iptables -I FORWARD -m string --string "chatgpt" --algo bm -j REJECT
+  316  ls
+  317  cd ..
+  318  tree
+  319  ls
+  320  mkdir smart_contracts
+  321  cd smart_contracts/
+  322  git clone https://github.com/ayoubERREBi/DVPN.v0.git
+  323  history
+  324  history > history.txt
