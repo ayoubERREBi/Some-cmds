@@ -11,12 +11,6 @@
    41  sudo iptables -L -t nat
    54  wg genkey | tee sv_prv | wg pubkey > sv_pubkey
    58  wg genkey | tee cl0_prv | wg pubkey > cl0_pubkey
-  153  python3 -m venv env
-  154  apt install python3.12-venv
-  155  sudo apt install python3.12-venv
-  156  python3 -m venv env
-  157  source env/bin/activate
-  206  sudo env/bin/python3 server.py
   207  sudo systemctl enable nvidia-suspend.service
   208  sudo systemctl enable nvidia-hibernate.service
   209  sudo systemctl enable nvidia-resume.service
